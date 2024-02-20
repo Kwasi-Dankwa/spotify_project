@@ -1,5 +1,7 @@
 # spotify_project
-This is a spotify data project to practice my data analysis and viz skills
+This is a spotify data project to practice my data analysis and viz skills.
+This dataset consists of ~600 songs that were in the top songs of the year from 2010 to 2019 (as measured by Billboard). 
+You can explore interesting song data pulled from Spotify such as the beats per minute, amount of spoken words, loudness, and energy of every song.
 
 # Data dictionary
 Variable	Explanation
