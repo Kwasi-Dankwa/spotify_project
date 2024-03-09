@@ -24,16 +24,15 @@ You can explore interesting song data pulled from Spotify such as the beats per 
 
 [Source](https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year) of dataset.
 
-## Don't know where to start? 
-
 **Challenges are brief tasks designed to help you practice specific skills:**
 
 - 🗺️ **Explore**: Which artists and genres are the most popular?
+- I was able to tackle this issue by aggregating calculating the total popularity of each artist and genre and creating a barplot to visualize the top 10.
 - 📊 **Visualize**: Visualize the numeric values as a time-series by year. Can you spot any changes over the years?
-- 🔎 **Analyze**: Train and build a classifier to predict a song's genre based on columns 3 to 13.
+- I visualized the numeric values as a time-series by year to spot any changes and trends over the years, as the years went by. This was done by aggregating data by year
+- After I created a line plot for each numberic variables over the years to visualize these trends.
+ 
+- 🔎 **Analyze**: I plan to expand on this project over time to by training and building a classifier to predict a song's genre based on specific columns.
 
-**Scenarios are broader questions to help you develop an end-to-end project for your portfolio:**
 
-Your friend, who is an aspiring musician, wants to make a hit song and has asked you to use your data skills to help her. You have decided to analyze what makes a top song, keeping in mind changes over the years. What concrete recommendations can you give her before she writes lyrics, makes beats, and records the song? She's open to any genre!
 
-You will need to prepare a report that is accessible to a broad audience. It will need to outline your motivation, 
