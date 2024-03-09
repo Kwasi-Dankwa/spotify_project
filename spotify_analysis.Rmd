@@ -31,7 +31,10 @@ artist_popularity <- artist_popularity[order(-artist_popularity$pop), ]
 
 # Display the top 10 most popular artists
 artist_ten <- head(artist_popularity, 10)
+```
 
+
+```{r}
 # Create bar plot to visualize top 10 artiste from 2010 to 2019
 barplot <- ggplot(artist_ten, aes(x = reorder(artist, -pop), y = pop)) +
   geom_bar(stat = "identity", fill = "red") +
@@ -43,6 +46,30 @@ barplot <- ggplot(artist_ten, aes(x = reorder(artist, -pop), y = pop)) +
 # Print the bar plot
 print(barplot)
 ```
+# The barplot shows us that beiber was the most popular star of the 2010s based on the total popularity of his music.
+
+```{r}
+# Calculate total popularity of each genre
+genre_popularity <- aggregate(pop ~ top.genre, data = spotify_data, sum)
+
+# Sort by popularity in descending order
+genre_popularity <- genre_popularity[order(-genre_popularity$pop), ]
+
+# Display the top 10 most popular genres
+genre_ten <- head(genre_popularity, 10)
+
+# Create bar plot for top 10 genres
+barplot_genre <- ggplot(genre_ten, aes(x = reorder(top.genre, -pop), y = pop)) +
+  geom_bar(stat = "identity", fill = "green") +
+  labs(title = "Top 10 Most Popular Genres",
+       x = "Genre",
+       y = "Total Popularity") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 0.5))
+
+# Print the bar plot for top 10 genres
+print(barplot_genre)
+```
+# The graph shows us that dance pop has heavily dominated the 2010s since its total popularity is way greater than the other genres combined.
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
